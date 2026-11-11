@@ -215,13 +215,13 @@
 
   /* ====== DOKEDY JE ODKAZ PLATNÝ ====== */
   /* Posledný deň prístupu vrátane. Formát: rok, mesiac, deň. */
-  var PLATI_DO = { rok: 2026, mesiac: 11, den: 12 };
+  var PLATI_DO = { rok: 2026, mesiac: 11, den: 13 };
   /* ==================================== */
 
-  var konec = new Date(PLATI_DO.rok, PLATI_DO.mesiac - 1, PLATI_DO.den, 17, 0, 0);
+  var konec = new Date(PLATI_DO.rok, PLATI_DO.mesiac - 1, PLATI_DO.den, 23, 59, 59);
   var mesiace = ['januára','februára','marca','apríla','mája','júna',
                  'júla','augusta','septembra','októbra','novembra','decembra'];
-  var datum = PLATI_DO.den + '. ' + mesiace[PLATI_DO.mesiac - 1] + ' ' + PLATI_DO.rok; datum += ' do 17:00';
+  var datum = PLATI_DO.den + '. ' + mesiace[PLATI_DO.mesiac - 1] + ' ' + PLATI_DO.rok;
 
   var live = document.getElementById('live');
   var expired = document.getElementById('expired');
